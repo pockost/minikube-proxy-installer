@@ -174,7 +174,7 @@ function configure_proxy() {
   echo "export http_proxy=$proxy_url" >> /etc/profile
   echo "export https_proxy=$proxy_url" >> /etc/profile
   echo "export ftp_proxy=$proxy_url" >> /etc/profile
-  echo "export no_proxy=$DEFAULT_NO_PROXY'" >> /etc/profile
+  echo "export no_proxy=$DEFAULT_NO_PROXY" >> /etc/profile
   echo 'export HTTP_PROXY=$http_proxy' >> /etc/profile
   echo 'export HTTPS_PROXY=$https_proxy' >> /etc/profile
   echo 'export FTP_PROXY=$ftp_proxy' >> /etc/profile
