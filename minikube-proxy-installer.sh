@@ -278,6 +278,15 @@ function install_minikube() {
 function start_minikube() {
   echo "starting minikube"
 
+  nb_cpu=$( cat /proc/cpuinfo |grep processor|wc -l )
+  if [ $nb_cpu -lt 2 ]
+  then
+    echo "You need at least 2 CPU in order to run minikube"
+    echo "Exiting ..."
+    exit 2
+  fi
+
+
 
   minikube_options=""
   if [ ! -z "$http_proxy" ]

@@ -52,6 +52,8 @@ A bash script configuring system to handle proxy when using minikube
 Usage
 *****
 
+In order to be able to run minikube you need yo have at least 2 CPU on your debian host (VM for the instance).
+
 Download the script, give it execution permissions and execute it:
 
 ::
