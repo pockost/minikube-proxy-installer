@@ -56,7 +56,7 @@ Download the script, give it execution permissions and execute it:
 
 ::
 
-   wget https://raw.githubusercontent.com/pockost/minikube-proxy-installer/master/minikube-proxy-installer.sh
+   https_proxy="http://MY-PROXY-ADDRESS" wget https://raw.githubusercontent.com/pockost/minikube-proxy-installer/master/minikube-proxy-installer.sh
    chmod +x minikube-proxy-installer.sh
    ./minikube-proxy-installer.sh
 
