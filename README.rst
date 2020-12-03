@@ -56,9 +56,9 @@ Download the script, give it execution permissions and execute it:
 
 ::
 
-   wget https://github.com/pockost/minikube-proxy-installer/raw/master/script.sh
-   chmod +x script.sh
-   ./script.sh -h
+   wget https://raw.githubusercontent.com/pockost/minikube-proxy-installer/master/minikube-proxy-installer.sh
+   chmod +x minikube-proxy-installer.sh
+   ./minikube-proxy-installer.sh
 
 To run tests:
 
