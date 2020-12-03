@@ -1,0 +1,11 @@
+---
+stages:
+  - test
+
+bionic:
+  image: ubuntu:bionic
+  stage: test
+  before_script:
+    - chmod +x testme.sh
+  script:
+    - ./testme.sh -i -k
