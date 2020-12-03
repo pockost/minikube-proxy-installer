@@ -411,9 +411,6 @@ function main() {
             ;;
         esac
       done
-      return 1
-    else
-      echo ${OUTPUT_INTERFACE[@]}
     fi
 
     install_deps
