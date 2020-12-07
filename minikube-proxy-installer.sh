@@ -462,14 +462,14 @@ function sanitize() {
 
 function run_as_root() {
   if [ "$( id -u )" != "0" ]; then
-    echo "This script need to be root"
-    which sudo &>/dev/null
-    if [ $? -eq 0 ]
-    then
-      sudo $0
-    else
-      su -c "$0" root
-    fi
+    #echo "This script need to be root"
+    #which sudo &>/dev/null
+    #if [ $? -eq 0 ]
+    #then
+    #  sudo $0
+    #else
+    su -c "$0" root
+    #fi
 
     echo "Please logout and reconnect to update $USER proxy env var"
     exit
